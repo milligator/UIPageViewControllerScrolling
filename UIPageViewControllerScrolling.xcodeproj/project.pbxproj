@@ -10,19 +10,8 @@
 		0423727F1A33F8B200608BC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423727E1A33F8B200608BC1 /* AppDelegate.swift */; };
 		042372861A33F8B200608BC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042372851A33F8B200608BC1 /* Images.xcassets */; };
 		042372891A33F8B200608BC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042372871A33F8B200608BC1 /* LaunchScreen.xib */; };
-		042372951A33F8B200608BC1 /* UIPageViewControllerScrollingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042372941A33F8B200608BC1 /* UIPageViewControllerScrollingTests.swift */; };
-		0423729F1A33F97A00608BC1 /* ExampleUIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423729E1A33F97A00608BC1 /* ExampleUIPageViewController.swift */; };
+		0423729F1A33F97A00608BC1 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423729E1A33F97A00608BC1 /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0423728F1A33F8B200608BC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 042372711A33F8B200608BC1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 042372781A33F8B200608BC1;
-			remoteInfo = UIPageViewControllerScrolling;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		042372791A33F8B200608BC1 /* UIPageViewControllerScrolling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewControllerScrolling.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,21 +19,13 @@
 		0423727E1A33F8B200608BC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042372851A33F8B200608BC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		042372881A33F8B200608BC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0423728E1A33F8B200608BC1 /* UIPageViewControllerScrollingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIPageViewControllerScrollingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042372931A33F8B200608BC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042372941A33F8B200608BC1 /* UIPageViewControllerScrollingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewControllerScrollingTests.swift; sourceTree = "<group>"; };
-		0423729E1A33F97A00608BC1 /* ExampleUIPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleUIPageViewController.swift; sourceTree = "<group>"; };
+		0423729E1A33F97A00608BC1 /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		042372761A33F8B200608BC1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0423728B1A33F8B200608BC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				042372791A33F8B200608BC1 /* UIPageViewControllerScrolling.app */,
-				0423728E1A33F8B200608BC1 /* UIPageViewControllerScrollingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,10 +56,8 @@
 			isa = PBXGroup;
 			children = (
 				0423727E1A33F8B200608BC1 /* AppDelegate.swift */,
-				042372851A33F8B200608BC1 /* Images.xcassets */,
-				042372871A33F8B200608BC1 /* LaunchScreen.xib */,
+				0423729E1A33F97A00608BC1 /* SliderViewController.swift */,
 				0423727C1A33F8B200608BC1 /* Supporting Files */,
-				0423729E1A33F97A00608BC1 /* ExampleUIPageViewController.swift */,
 			);
 			path = UIPageViewControllerScrolling;
 			sourceTree = "<group>";
@@ -87,6 +65,8 @@
 		0423727C1A33F8B200608BC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				042372871A33F8B200608BC1 /* LaunchScreen.xib */,
+				042372851A33F8B200608BC1 /* Images.xcassets */,
 				0423727D1A33F8B200608BC1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -129,39 +109,18 @@
 			productReference = 042372791A33F8B200608BC1 /* UIPageViewControllerScrolling.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0423728D1A33F8B200608BC1 /* UIPageViewControllerScrollingTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0423729B1A33F8B200608BC1 /* Build configuration list for PBXNativeTarget "UIPageViewControllerScrollingTests" */;
-			buildPhases = (
-				0423728A1A33F8B200608BC1 /* Sources */,
-				0423728B1A33F8B200608BC1 /* Frameworks */,
-				0423728C1A33F8B200608BC1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				042372901A33F8B200608BC1 /* PBXTargetDependency */,
-			);
-			name = UIPageViewControllerScrollingTests;
-			productName = UIPageViewControllerScrollingTests;
-			productReference = 0423728E1A33F8B200608BC1 /* UIPageViewControllerScrollingTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		042372711A33F8B200608BC1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pilipenko Dima";
 				TargetAttributes = {
 					042372781A33F8B200608BC1 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					0423728D1A33F8B200608BC1 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 042372781A33F8B200608BC1;
 					};
 				};
 			};
@@ -179,7 +138,6 @@
 			projectRoot = "";
 			targets = (
 				042372781A33F8B200608BC1 /* UIPageViewControllerScrolling */,
-				0423728D1A33F8B200608BC1 /* UIPageViewControllerScrollingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,13 +152,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0423728C1A33F8B200608BC1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -208,28 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0423729F1A33F97A00608BC1 /* ExampleUIPageViewController.swift in Sources */,
+				0423729F1A33F97A00608BC1 /* SliderViewController.swift in Sources */,
 				0423727F1A33F8B200608BC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0423728A1A33F8B200608BC1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				042372951A33F8B200608BC1 /* UIPageViewControllerScrollingTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		042372901A33F8B200608BC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 042372781A33F8B200608BC1 /* UIPageViewControllerScrolling */;
-			targetProxy = 0423728F1A33F8B200608BC1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		042372871A33F8B200608BC1 /* LaunchScreen.xib */ = {
@@ -263,6 +198,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -326,6 +262,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIPageViewControllerScrolling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dimpiax.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -336,41 +273,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UIPageViewControllerScrolling/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dimpiax.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0423729C1A33F8B200608BC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UIPageViewControllerScrollingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIPageViewControllerScrolling.app/UIPageViewControllerScrolling";
-			};
-			name = Debug;
-		};
-		0423729D1A33F8B200608BC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UIPageViewControllerScrollingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIPageViewControllerScrolling.app/UIPageViewControllerScrolling";
 			};
 			name = Release;
 		};
@@ -393,14 +297,7 @@
 				0423729A1A33F8B200608BC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		0423729B1A33F8B200608BC1 /* Build configuration list for PBXNativeTarget "UIPageViewControllerScrollingTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0423729C1A33F8B200608BC1 /* Debug */,
-				0423729D1A33F8B200608BC1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
